@@ -151,7 +151,8 @@ class Main(tk.Frame):
 
     # Her oprettes vores brugerinterface.
     # I kan selv tilføje de widgets, I har behov for
-
+    def key_binds(self):
+        self.keydown_a.bind("a", lambda event: print("cum guzzler"))
 
     def create_interface(self):
         self.main_frame = tk.Frame(self)
