@@ -110,11 +110,11 @@ class Main(tk.Frame):
     def get_red(self):
         if self.megasejfarvethorleif == "Rød":
             print(self.megasejfarvethorleif)
-            xred = 15
-            yred = 15
-            for xred in range(1,16) and yred in range(1,16):
-                self.dobot.move_to(self, xred*10,yred*10,100,90, wait=False) 
-                print()
+            x = 15
+            y = 15
+            for x in range(1,16) and y in range(1,16):
+                self.dobot.move_to(self, x,y,100,90, wait=False) 
+
         else:
             pass
         
